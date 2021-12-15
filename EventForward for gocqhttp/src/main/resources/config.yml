@@ -1,0 +1,23 @@
+# Socket 服务器地址
+url: '127.0.0.1'
+
+# Socket 服务器端口
+port: '5700'
+
+# 目标Q群
+group_id: '123456789'
+
+# 转发玩家聊天 - 外部至游戏 Forward player chat-external to game
+# I_ChatEvent: false
+
+#转发玩家聊天 - 游戏至外部 Forward player chat-game to external
+O_ChatEvent: true
+
+# 玩家登入事件
+PlayerLoginEvent: true
+
+# 玩家登出事件
+PlayerLogoutEvent: true
+
+# 玩家死亡事件
+PlayerDeadthEvent: true

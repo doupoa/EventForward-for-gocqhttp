@@ -1,0 +1,9 @@
+name: EventForward
+version: '${project.version}'
+main: site.doupoa.EventForward.EventForward
+api-version: 1.17
+prefix: WS2NB
+load: STARTUP
+authors: [ doupoa ]
+description: Forward events to any server 转发事件到go-cqhttp
+website: doupoa.site
