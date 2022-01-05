@@ -11,8 +11,11 @@ import site.doupoa.EventForward.utils.GetRequest;
 public class O_ChatEvent implements Listener {
     @EventHandler(priority = EventPriority.LOW, ignoreCancelled = true)
     public void onPlayerSay(AsyncPlayerChatEvent event) { //玩家聊天事件
-        Player p = event.getPlayer();
-        GetRequest.addToList(p.getName() + "说：" + event.getMessage());
+        if (!event.isCancelled()) { //判断该事件是否被取消 是则返回false
+            Player p = event.getPlayer();
+            GetRequest.addToList(p.getName() + "说：" + event.getMessage());
+        }
+
     }
 }
 
